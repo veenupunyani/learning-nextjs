@@ -1,9 +1,9 @@
 export default async function ProductPage({ 
   params 
 }: { 
-  params: { productId: string } 
+  params: Promise<{ productId: string }> 
 }) {
-  const { productId } = params;
+  const { productId } = await params;
 
   // Example: You could fetch product data here
   // const product = await fetch(`https://api.example.com/products/${productId}`);
