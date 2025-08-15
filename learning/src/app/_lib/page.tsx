@@ -1,0 +1,8 @@
+export default function LibPage() {
+  return (
+    <div>
+      <h1>Library</h1>
+      <p>Welcome to the library page.</p>
+    </div>
+  );
+}
